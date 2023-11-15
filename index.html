@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSHN</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="scss/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <div class="sidebar__inner">
+            <div class="sidebar__top-panel">
+                <span><img src="images/header/england.png" alt=""> English</span>
+                <div class="sidebar__closeBtn">
+                    <div class="sidebar__closeBtn-lines"></div>
+                    <div class="sidebar__closeBtn-lines"></div>
+                </div>
+            </div>
+            <ul class="sidebar__info">
+                <li class="sidebar__info-item">Status</li>
+                <li class="sidebar__info-item">Docs</li>
+                <li class="sidebar__info-item">Supports</li>
+            </ul>
+            <ul class="sidebar__nav">
+                <li class="sidebar__nav-item">Solutions</li>
+                <div id="sidebarSol" class="sidebar__nav-content">
+                    <div class="sidebar__header-link">
+                        <a href="">Managed Container Platforms</a>
+                    </div>
+                    <ul class="sidebar_nav">
+                        <li class="sidebar__nav-link"><a href="">Managed OpenShift</a></li>
+                        <li class="sidebar__nav-link"><a href="">Managed Rancher</a></li>
+                        <li class="sidebar__nav-link"><a href="">Managed Kubernetes</a></li>
+                    </ul>
+                    <div class="sidebar__header-link">
+                        <a href="">Managed Application Services</a>
+                    </div>
+                    <ul class="sidebar_nav">
+                        <li class="sidebar__nav-link"><a href="">24/7 application operations</a></li>
+                        <li class="sidebar__nav-link"><a href="">Application containerization</a></li>
+                        <li class="sidebar__nav-link"><a href="">CI/CD Pipelines & Application Delivery</a></li>
+                    </ul>
+                    <div class="sidebar__header-link">
+                        <a href="">DevOps Enablement</a>
+                    </div>
+                    <ul class="sidebar_nav">
+                        <li class="sidebar__nav-link"><a href="">DevOps Workshop</a></li>
+                        <li class="sidebar__nav-link"><a href="">DevOps Consulting</a></li>
+                    </ul>
+                </div>
+                <li class="sidebar__nav-item">Products</li>
+                <div id="sidebarPrd" class="sidebar__nav-content">
+                    <div class="menu__products-item">
+                        <div class="menu__header-link">
+                            <a href="">Managed Services</a>
+                        </div>
+                        <ul class="menu_nav">
+                            <li class="menu__nav-link"><a href="">Managed DBs</a></li>
+                            <li class="menu__nav-link"><a href="">Managed Backends</a></li>
+                            <li class="menu__nav-link"><a href="">Managed Applications</a></li>
+                            <li class="menu__nav-link"><a href="">Managed Application Server</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__products-item">
+                        <div class="menu__header-link">
+                            <a href="">APPUiO</a>
+                        </div>
+                        <ul class="menu_nav">
+                            <li class="menu__nav-link"><a href="">APPUiO Public</a></li>
+                            <li class="menu__nav-link"><a href="">APPUiO Managed</a></li>
+                            <li class="menu__nav-link"><a href="">APPUiO Self Managed</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__products-item">
+                        <div class="menu__header-link">
+                            <a href="">Open Source</a>
+                        </div>
+                        <ul class="menu_nav">
+                            <li class="menu__nav-link"><a href="">Project Syn</a></li>
+                            <li class="menu__nav-link"><a href="">K8up</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__products-item">
+                        <div class="menu__header-link">
+                            <a href="">VSHN Syn Support</a>
+                        </div>
+                    </div>
+                </div>
+                <li class="sidebar__nav-item">Learn</li>
+                <li class="sidebar__nav-item">Partners</li>
+                <li class="sidebar__nav-item">Blog</li>
+                <li class="sidebar__nav-item">About</li>
+                <li class="sidebar__nav-item">Contact</li>
+            </ul>
+        </div>
+    </aside>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__top-panel">
+                <ul class="header__info">
+                    <li class="header__info-item">Status</li>
+                    <li class="header__info-item">Docs</li>
+                    <li class="header__info-item">Supports</li>
+                </ul>
+                <ul class="header__language">
+                    <li class="header__language-item">
+                        <span><img src="images/header/england.png" alt=""> English</span>
+                    </li>
+                    <li class="header__language-item-active header__language-item">
+                        <span><img src="images/header/germany.png" alt=""> Deutsch</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="bottom" class="header__bottom-panel">
+                <a href="#" class="header__logo">
+                    <img src="images/header/logo.png" alt="">
+                </a>
+                <ul id='nav' class="header__nav">
+                    <li id="solutions" class="header__nav-item">Solutions</li>
+                    <li id="products" class="header__nav-item">Products</li>
+                    <li class="header__nav-item">Learn</li>
+                    <li class="header__nav-item">Partners</li>
+                    <li id="blog" class="header__nav-item">Blog</li>
+                    <li class="header__nav-item">About</li>
+                    <li class="header__nav-item">Contact</li>
+                    <li class="header__nav-item">Login</li>
+                </ul>
+                <div class="header__burger">
+                    <div class="header__burger-lines"></div>
+                    <div class="header__burger-lines"></div>
+                    <div class="header__burger-lines"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="menu">
+        <div id="solutionsInner" class="menu__inner">
+            <div class="container">
+                <div id="hidedSolutionsInner" class="menu__solutions">
+                    <div class="menu__banner">
+                        <a href=""></a>
+                        <div class="menu__banner-title title">
+                            <a href="">Report DevOps in Switzerland 2020</a>
+                        </div>
+                        <a class="menu__banner-link" href="">Read more</a>
+                    </div>
+                    <div class="menu__solutions-item">
+                        <div class="menu__header-link">
+                            <a href="">Managed Container Platforms</a>
+                        </div>
+                        <ul class="menu_nav">
+                            <li class="menu__nav-link"><a href="">Managed OpenShift</a></li>
+                            <li class="menu__nav-link"><a href="">Managed Rancher</a></li>
+                            <li class="menu__nav-link"><a href="">Managed Kubernetes</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__solutions-item">
+                        <div class="menu__header-link">
+                            <a href="">Managed Application Services</a>
+                        </div>
+                        <ul class="menu_nav">
+                            <li class="menu__nav-link"><a href="">24/7 application operations</a></li>
+                            <li class="menu__nav-link"><a href="">Application containerization</a></li>
+                            <li class="menu__nav-link"><a href="">CI/CD Pipelines & Application Delivery</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__solutions-item">
+                        <div class="menu__header-link">
+                            <a href="">DevOps Enablement</a>
+                        </div>
+                        <ul class="menu_nav">
+                            <li class="menu__nav-link"><a href="">DevOps Workshop</a></li>
+                            <li class="menu__nav-link"><a href="">DevOps Consulting</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="productsInner" class="menu__inner">
+            <div class="container">
+                <div id="hidedProductsInner" class="menu__products">
+                    <div class="menu__banner">
+                        <div class="menu__banner-title title">
+                            Report DevOps in Switzerland 2020
+                        </div>
+                        <a class="menu__banner-link" href="">Read more</a>
+                    </div>
+                    <div class="menu__products-item">
+                        <div class="menu__header-link">
+                            <a href="">Managed Services</a>
+                        </div>
+                        <ul class="menu_nav">
+                            <li class="menu__nav-link"><a href="">Managed DBs</a></li>
+                            <li class="menu__nav-link"><a href="">Managed Backends</a></li>
+                            <li class="menu__nav-link"><a href="">Managed Applications</a></li>
+                            <li class="menu__nav-link"><a href="">Managed Application Server</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__products-item">
+                        <div class="menu__header-link">
+                            <a href="">APPUiO</a>
+                        </div>
+                        <ul class="menu_nav">
+                            <li class="menu__nav-link"><a href="">APPUiO Public</a></li>
+                            <li class="menu__nav-link"><a href="">APPUiO Managed</a></li>
+                            <li class="menu__nav-link"><a href="">APPUiO Self Managed</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__products-item">
+                        <div class="menu__header-link">
+                            <a href="">Open Source</a>
+                        </div>
+                        <ul class="menu_nav">
+                            <li class="menu__nav-link"><a href="">Project Syn</a></li>
+                            <li class="menu__nav-link"><a href="">K8up</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__products-item">
+                        <div class="menu__header-link">
+                            <a href="">VSHN Syn Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="blogInner" class="menu__inner">
+            <div class="container">
+                <div id="hidedBlogInner" class="menu__blog">
+                    <div class="menu__banner">
+                        <div class="menu__banner-title title">
+                            Report DevOps in Switzerland 2020
+                        </div>
+                        <a class="menu__banner-link" href="">Read more</a>
+                    </div>
+                    <div class="menu__blog-right">
+                        <div class="menu__blog-item">
+                            <h3 class="menu__blog-item-title title title_lg">
+                                VSHN’s Corporate Governance 2020
+                            </h3>
+                            <p class="menu__blog-item-text">
+                                How time flies! Almost six years ago we founded VSHN.
+                                In the beginning, eight of us sat in an open-plan office.
+                                Decisions could be made quickly and easily in...
+                            </p>
+                            <a class="menu__blog-item-btn button button_sm" href="#">Read more</a>
+                        </div>
+                        <div class="menu__blog-item">
+                            <h3 class="menu__blog-item-title title title_lg">
+                                Partnership VSHN & Rancher
+                            </h3>
+                            <p class="menu__blog-item-text">
+                                VSHN enters into a partnership with Rancher. VSHN has been working with Rancher since
+                                2018 and is now an official Rancher Partner. With Managed Rancher...
+                            </p>
+                            <a class="menu__blog-item-btn button button_sm" href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero section">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title title title_xxl">
+                    We run your application
+                </h1>
+                <p class="hero__text">
+                    VSHN is the Ops in DevOps.
+                    We automate the operation of applications in the cloud or on-premise,
+                    so that software developers can focus on their business.
+                </p>
+                <a class="button" href="#">
+                    Show me how
+                </a>
+            </div>
+            <img class="hero__image" aria-hidden="true" src="images/hero/illustration.svg" alt="">
+            <!-- <img class="hero__shape hero__shape_top" aria-hidden="true" src="images/hero/shape-1.svg" alt="">
+                <img class="hero__shape hero__shape_bottom" aria-hidden="true" src="images/hero/shape-2.svg" alt=""> -->
+        </div>
+    </section>
+
+    <section class="features section">
+        <div class="container">
+            <h2 class="features__title title title_xl">
+                We are experts in Cloud Native, Container & Kubernetes
+            </h2>
+            <div class="features__items-wrapper">
+
+                <a href="#" class="features__item">
+                    <img class="features__item-image" aria-hidden="true" src="images/features/card-1.svg" alt="">
+                    <h3 class="features__item-title title title_lg">Release faster & more often</h3>
+                    <div class="features__item-footer">Learn more</div>
+                </a>
+
+
+                <a href="#" class="features__item">
+                    <img class="features__item-image" aria-hidden="true" src="images/features/card-2.svg" alt="">
+                    <h3 class="features__item-title title title_lg">Increase quality & security</h3>
+                    <div class="features__item-footer">Learn more</div>
+                </a>
+
+
+                <a href="#" class="features__item">
+                    <img class="features__item-image" aria-hidden="true" src="images/features/card-3.svg" alt="">
+                    <h3 class="features__item-title title title_lg">Reduce cost & failure rates</h3>
+                    <div class="features__item-footer">Learn more</div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="our section">
+        <div class="container our__inner">
+            <section class="our__solutions">
+                <h2 class="our__title title title_xl">Our solutions</h2>
+                <p class="our__text">
+                    DevOps is the industrial revolution in the software industry.
+                    VSHN helps you solve the problems when
+                    software is transformed into an online-service.
+                </p>
+                <ul class="our__marks">
+                    <li class="our__marks-item">
+                        <span class="our__marks-text">DevOps Enablement</span>
+                    </li>
+                    <li class="our__marks-item">
+                        <span class="our__marks-text">DevOps Enablement</span>
+                    </li>
+                    <li class="our__marks-item">
+                        <span class="our__marks-text">Managed Application Services</span>
+                    </li>
+                </ul>
+                <a href="#" class="button">Learn more</a>
+            </section>
+            <section class="our__products">
+                <h2 class="our__title title title_xl">Our Products</h2>
+                <p class="our__text">
+                    Our products help you get the most out of your DevOps journey.
+                </p>
+                <ul class="our__marks">
+                    <li class="our__marks-item">
+                        <span class="our__marks-text">APPUiO</span>
+                    </li>
+                    <li class="our__marks-item">
+                        <span class="our__marks-text">Managed Services</span>
+                    </li>
+                    <li class="our__marks-item">
+                        <span class="our__marks-text">VSHN Syn Support</span>
+                    </li>
+                    <li class="our__marks-item">
+                        <span class="our__marks-text">Open Source</span>
+                    </li>
+                </ul>
+                <a href="#" class="button">Learn more</a>
+            </section>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <div class="news__inner">
+                <h2 class="news__title title title_xl">Latest news</h2>
+                <div class="news__inner-buttons">
+                    <button class="news__button-prev"><img src="images/slider/shape-1.svg" alt=""></button>
+                    <button class="news__button-next"><img src="images/slider/shape-2.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-container swiper-container--news news__slider-container">
+            <div class="news__slider swiper-wrapper">
+                <div class="news__slide swiper-slide">
+                    <div class="news__item">
+                        <div class="news__tags">
+                            <div class="news__tags-item">Technical</div>
+                            <div class="news__tags-item">Project Syn</div>
+                        </div>
+                        <h3 class="news__item-title title title_lg">
+                            Second Beta Release of Project Syn Tools
+                        </h3>
+                        <p class="news__item-text">
+                            Without further ado, we’re announcing the release 0.2 of the Project Syn tools.
+                            Since the first public release mid-March this year (read more about it in First...
+                        </p>
+                        <a class="button button_sm" href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="news__slide swiper-slide">
+                    <div class="news__item">
+                        <div class="news__tags">
+                            <div class="news__tags-item">General</div>
+                            <div class="news__tags-item">VSHNinternal</div>
+                        </div>
+                        <h3 class="news__item-title title title_lg">
+                            VSHN’s Corporate Governance 2020
+                        </h3>
+                        <p class="news__item-text">
+                            How time flies! Almost six years ago we founded VSHN.
+                            In the beginning, eight of us sat in an open-plan office.
+                            Decisions could be made quickly and easily in...
+                        </p>
+                        <a class="button button_sm" href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="news__slide swiper-slide">
+                    <div class="news__item">
+                        <div class="news__tags">
+                            <div class="news__tags-item">General</div>
+                            <div class="news__tags-item">Press releases</div>
+                        </div>
+                        <h3 class="news__item-title title title_lg">
+                            VSHN’s Corporate Governance 2020
+                        </h3>
+                        <p class="news__item-text">
+                            VSHN enters into a partnership with Rancher.
+                            VSHN has been working with Rancher since 2018 and is now an official Rancher Partner.
+                            With Managed Rancher...
+                        </p>
+                        <a class="button button_sm" href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="news__slide swiper-slide">
+                    <div class="news__item">
+                        <div class="news__tags">
+                            <div class="news__tags-item">Technical</div>
+                            <div class="news__tags-item">Project Syn</div>
+                        </div>
+                        <h3 class="news__item-title title title_lg">
+                            Second Beta Release of Project Syn Tools
+                        </h3>
+                        <p class="news__item-text">
+                            Without further ado, we’re announcing the release 0.2 of the Project Syn tools.
+                            Since the first public release mid-March this year (read more about it in First...
+                        </p>
+                        <a class="button button_sm" href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="news__slide swiper-slide">
+                    <div class="news__item">
+                        <div class="news__tags">
+                            <div class="news__tags-item">General</div>
+                            <div class="news__tags-item">VSHNinternal</div>
+                        </div>
+                        <h3 class="news__item-title title title_lg">
+                            VSHN’s Corporate Governance 2020
+                        </h3>
+                        <p class="news__item-text">
+                            How time flies! Almost six years ago we founded VSHN.
+                            In the beginning, eight of us sat in an open-plan office.
+                            Decisions could be made quickly and easily in...
+                        </p>
+                        <a class="button button_sm" href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="news__slide swiper-slide">
+                    <div class="news__item">
+                        <div class="news__tags">
+                            <div class="news__tags-item">General</div>
+                            <div class="news__tags-item">Press releases</div>
+                        </div>
+                        <h3 class="news__item-title title title_lg">
+                            VSHN’s Corporate Governance 2020
+                        </h3>
+                        <p class="news__item-text">
+                            VSHN enters into a partnership with Rancher.
+                            VSHN has been working with Rancher since 2018 and is now an official Rancher Partner.
+                            With Managed Rancher...
+                        </p>
+                        <a class="button button_sm" href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="news__pagination swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="benefits section">
+        <div class="container benefits__wrapper">
+            <div class="benefits__content">
+                <h2 class="benefits__title title title_xl">
+                    We use innovative technology
+                </h2>
+                <p class="benefits__text">
+                    We can offer these tools as readily available managed services.
+                    We have the necessary soft-skills for consulting,
+                    collaborative implementation and continuous improvement
+                </p>
+            </div>
+            <ul class="benefits__blocks">
+                <li class="benefits__item benefits__item_rancher">
+                    <div class="benefits__item-icon">
+                        <img src="images/benefits/elephant.svg" alt="">
+                    </div>
+                    <h4 class="benefits__item-title">Rancher</h4>
+                </li>
+                <li class="benefits__item benefits__item_kubernates">
+                    <div class="benefits__item-icon">
+                        <img src="images/benefits/kubernates.svg" alt="">
+                    </div>
+                    <h4 class="benefits__item-title">Kubernates</h4>
+                </li>
+                <li class="benefits__item benefits__item_ansible">
+                    <div class="benefits__item-icon">
+                        <img src="images/benefits/ansible.svg" alt="">
+                    </div>
+                    <h4 class="benefits__item-title">Ansible</h4>
+                </li>
+                <li class="benefits__item benefits__item_openshift">
+                    <div class="benefits__item-icon">
+                        <img src="images/benefits/openshift.svg" alt="">
+                    </div>
+                    <h4 class="benefits__item-title">Openshift</h4>
+                </li>
+                <li class="benefits__item benefits__item_docker">
+                    <div class="benefits__item-icon">
+                        <img src="images/benefits/docker.svg" alt="">
+                    </div>
+                    <h4>Docker</h4>
+                </li>
+                <li class="benefits__item benefits__item_puppet">
+                    <div class="benefits__item-icon">
+                        <img src="images/benefits/puppet.svg" alt="">
+                    </div>
+                    <h4 class="benefits__item-title">Puppet</h4>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="worker section">
+        <div class="container worker__inner">
+            <div class="worker__background-left">
+                <div class="worker__background-left-wrapper">
+                    <div class="worker__background-left-slider swiper-container swiper-container--worker">
+                        <div class="worker__info swiper-wrapper">
+                            <div class="swiper-slide worker__info-slide">
+                                <img class="worker__photo" src="images/worker/photo.png" alt="">
+                            </div>
+                            <div class="worker__background-shape worker__background-shape_1"></div>
+                            <div class="worker__background-shape worker__background-shape_2"></div>
+                            <div class="worker__background-shape worker__background-shape_3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container swiper-container--worker worker__info-bottom">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide worker__info-bottom-slide">
+                            <h3 class="worker__title title title_lg">
+                                Michael Schmid
+                            </h3>
+                            <span class="worker__job">Group CTO, Amazee Labs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination worker__pagination"></div>
+            </div>
+            <div class="worker__background-right">
+                <img class="worker__hooks" src="images/worker/icon.png" alt="">
+                <div class="worker__background-right-slider swiper-container swiper-container--worker">
+                    <div class="swiper-wrapper worker__swiper">
+                        <div class="swiper-slide worker__slide">
+                            <h1 class="title title_xl worker__title">
+                                We experience a trustful and successful collaboration with VSHN...
+                            </h1>
+                        </div>
+                        <div class="swiper-slide worker__slide">
+                            <h1 class="title title_xl worker__title">
+                                We experience a trustful and successful collaboration with VSHN...
+                            </h1>
+                        </div>
+                        <div class="swiper-slide worker__slide">
+                            <h1 class="title title_xl worker__title">
+                                We experience a trustful and successful collaboration with VSHN...
+                            </h1>
+                        </div>
+                        <div class="swiper-slide worker__slide">
+                            <h1 class="title title_xl worker__title">
+                                We experience a trustful and successful collaboration with VSHN...
+                            </h1>
+                        </div>
+                        <div class="swiper-slide worker__slide">
+                            <h1 class="title title_xl worker__title">
+                                We experience a trustful and successful collaboration with VSHN...
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="button worker__button-next">continue</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="jobs section">
+        <div class="container jobs__inner">
+            <h2 class="jobs__title title title_xl">We're looking for talents</h2>
+            <div class="jobs__text">We're a growing company and are currently looking for new team members</div>
+            <a class="button" href="#">Jobs</a>
+        </div>
+    </section>
+
+    <section class="report section">
+        <div class="container report__inner">
+            <div class="report__image">
+                <div class="report__main-wrapper">
+                    <img class="report__image-main" aria-hidden="true" src="images/report/cover.jpg" alt="">
+                    <div class="report__image-shape1"></div>
+                    <div class="report__image-shape2"></div>
+                    <div class="report__image-shape3"></div>
+                    <img class="report__image-logo" aria-hidden="true" src="images/report/logo.png" alt="">
+                </div>
+            </div>
+            <div class="report__content">
+                <h2 class="report__title title title_xl">
+                    Report DevOps
+                    in Switzerland 2020
+                </h2>
+                <div class="report__text">
+                    Download the report of our DevOps in Switzerland study 2020.
+                </div>
+                <a href="" class="button">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience section">
+        <div class="container">
+            <h2 class="experience__title title title_xl">
+                Our experience is highly appreciated by others
+            </h2>
+            <div class="experience__wrapper">
+                <a href="#" class="experience__item">
+                    <img class="experience__item-image" aria-hidden="true" src="images/experience/first.png" alt="">
+                    <img class="experience__item-hover" aria-hidden="true" src="images/experience/effect.png" alt="">
+                    <h3 class="experience__item-title title title_lg">
+                        Digital Economy Award
+                    </h3>
+                    <div class="experience__item-text">
+                        VSHN wins Gold at Swiss Digital Economy Award
+                        2019 in the category Highest Digital Quality.
+                    </div>
+                    <div class="experience__item-footer">Read more</div>
+                </a>
+                <a href="#" class="experience__item">
+                    <img class="experience__item-image" aria-hidden="true" src="images/experience/second.png" alt="">
+                    <img class="experience__item-hover" aria-hidden="true" src="images/experience/effect.png" alt="">
+                    <h3 class="experience__item-title title title_lg">
+                        KCSP
+                    </h3>
+                    <div class="experience__item-text">
+                        VSHN is the first Kubernetes Certified Service Provider (KCSP) in Switzerland
+                    </div>
+                    <div class="experience__item-footer">Read more</div>
+                </a>
+                <a href="#" class="experience__item">
+                    <img class="experience__item-image" aria-hidden="true" src="images/experience/third.png" alt="">
+                    <img class="experience__item-hover" aria-hidden="true" src="images/experience/effect.png" alt="">
+                    <h3 class="experience__item-title title title_lg">
+                        Rising Star
+                    </h3>
+                    <div class="experience__item-text">
+                        VSHN is Rising Star Switzerland of ISG Provider Lens in Cloud Transformation / Operation
+                        Services & XaaS
+                    </div>
+                    <div class="experience__item-footer">Read more</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section">
+        <div class="container contact__inner">
+            <h2 class="contact__title title_xl title">Contact us</h2>
+            <div class="contact__text">
+                Our team of experts is available to you. In case of emergency even 24/7
+            </div>
+            <a class="button" href="#">Contact us</a>
+        </div>
+    </section>
+
+    <footer class="footer section">
+        <div class="container">
+            <a href="#">
+                <img class="footer__logo" aria-hidden="true" src="images/footer/logo.png" alt="">
+            </a>
+            <div class="footer__inner">
+                <div class="footer__socials">
+                    <a class="footer__socials-icon" href="#">
+                        <img class="footer__social-img" src="images/footer/twitter.png" alt="">
+                    </a>
+                    <a class="footer__socials-icon" href="#">
+                        <img class="footer__social-img" src="images/footer/linkedin.png" alt="">
+                    </a>
+                    <a class="footer__socials-icon" href="#">
+                        <img class="footer__social-img" src="images/footer/github.png" alt="">
+                    </a>
+                    <a class="footer__socials-icon" href="#">
+                        <img class="footer__social-img" src="images/footer/gitlab.png" alt="">
+                    </a>
+                    <a class="footer__socials-icon" href="#">
+                        <img class="footer__social-img" src="images/footer/facebook.png" alt="">
+                    </a>
+                    <a class="footer__socials-icon" href="#">
+                        <img class="footer__social-img" src="images/footer/instagram.png" alt="">
+                    </a>
+                    <a class="footer__socials-icon" href="#">
+                        <img class="footer__social-img" src="images/footer/youtube.png" alt="">
+                    </a>
+                </div>
+                <ul class="footer__nav">
+                    <li class="footer__nav-link">
+                        <a href="#">Solutions</a>
+                    </li>
+                    <li class="footer__nav-link">
+                        <a href="#">Partners</a>
+                    </li>
+                    <li class="footer__nav-link">
+                        <a href="#">Contact</a>
+                    </li>
+                    <li class="footer__nav-link">
+                        <a href="#">Imprint</a>
+                    </li>
+                    <li class="footer__nav-link">
+                        <a href="#">Products</a>
+                    </li>
+                    <li class="footer__nav-link">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="footer__nav-link">
+                        <a href="#">Support</a>
+                    </li>
+                    <li class="footer__nav-link">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="footer__nav-link">
+                        <a href="#">Learn</a>
+                    </li>
+                    <li class="footer__nav-link">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="footer__nav-link">
+                        <a href="#">GTC</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__bottom">
+                <div>Creative design made by <span class="footer__color">Pixel Point</span></div>
+                <div>© 2020 VSHN. AG Neugasse 10, CH-8005, Zürich, Switzerland</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

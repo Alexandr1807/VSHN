@@ -1,0 +1,39 @@
+.button {
+    display: inline-block;
+    padding: 20px 40px;
+
+    background-color: $color-secondary;
+    border-radius: 30px 4px;
+
+    font-size: $font-size-xs;
+    font-weight: 900;
+    line-height: $line-height-xs;
+    color: $color-primary;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: border-radius $transition-base linear;
+
+    &:hover {
+        border-radius: 4px 30px;
+    }
+
+    @include md-down {
+        padding: 15px 30px;
+
+        font-size: $font-size-xxs;
+    }
+
+    &_sm {
+        padding: 12px 20px;
+        font-size: $font-size-xxxs;
+        line-height: $line-height-xxxs;
+
+        border-radius: 15px 2px;
+
+        &:hover {
+            border-radius: 2px 15px;
+        }
+    }
+}

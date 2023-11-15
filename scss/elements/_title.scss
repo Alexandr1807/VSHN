@@ -1,0 +1,42 @@
+.title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 900;
+    line-height: 1.2;
+
+    &_xxl {
+        font-size: 70px;
+
+        @include lg-down {
+            font-size: 60px;
+        }
+
+        @include md-down {
+            font-size: 50px;
+        }
+    }
+
+    &_xl {
+        font-size: 50px;
+
+        @include lg-down {
+            font-size: 40px;
+        }
+
+        @include md-down {
+            font-size: 36px;
+        } 
+    }
+
+    &_lg {
+        font-size: 26px;
+
+        @include lg-down {
+            font-size: 24px;
+        }
+
+        @include md-down {
+            font-size: 22px;
+        } 
+    }
+}

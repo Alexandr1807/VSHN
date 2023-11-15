@@ -1,0 +1,164 @@
+.news {
+  margin-bottom: 200px;
+  overflow: hidden;
+
+  @include lg-down {
+    margin-bottom: 80px;
+  }
+
+  @include sm-down {
+    margin-bottom: 105px;
+  }
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1340px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 115px;
+    margin-bottom: 60px;
+
+    @include lg-down {
+      margin-bottom: 45px;
+      grid-template-columns: 1fr 95px;
+    }
+
+    @include md-down {
+      margin-bottom: 30px;
+    }
+
+    @include sm-down {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__inner-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+
+    @include lg-down {
+      justify-content: space-around;
+    }
+
+    @include sm-down {
+      display: none;
+    }
+  }
+
+  &__item {
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+    background: linear-gradient(234.34deg, #F8FAFC 0%, #FFFFFF 100%);
+
+    box-shadow: 0px 5px 5px 5px rgba(0, 13, 26, 0.05);
+    border-radius: 8px;
+
+    @include lg-down {}
+
+    @include md-down {
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 25px;
+    }
+
+    @include sm-down {
+      max-width: 384px;
+      max-height: 335px;
+      margin: 0 auto;
+      padding-top: 20px;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+
+  &__tags-item {
+    margin: 5px 7.5px;
+    padding: 5px 15px;
+
+    background-color: #E9EBF2;
+
+    font-size: $font-size-xxs;
+    line-height: $line-height-xxs;
+    font-weight: 700;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 30px;
+
+    @include md-down {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__item-text {
+    margin-bottom: 30px;
+
+    color: $color-tertiary;
+    font-size: $font-size-xs;
+    line-height: $line-height-xs;
+
+    @include md-down {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__slider {
+    margin-bottom: 30px;
+  }
+
+  &__slide {
+    width: 410px !important;
+
+    @include lg-down {
+      width: 450px !important;
+    }
+
+    @include md-down {
+      width: 340px !important;
+    }
+
+    @include sm-down {
+      width: 380px !important;
+    }
+  }
+
+  &__button-prev,
+  &__button-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    border: 2px solid #E9EBF2;
+
+    &:focus {
+      outline: 0;
+    }
+
+    @include lg-down {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__button-prev {
+    right: 65px;
+  }
+}

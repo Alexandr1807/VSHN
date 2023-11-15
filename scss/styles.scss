@@ -1,0 +1,28 @@
+@import "variables";
+
+// Vendor
+@import "vendor/normalize.scss";
+
+@import "mixins";
+@import "global";
+@import "vendor/swiper.scss";
+// Elements 
+@import "elements/container.scss";
+@import "elements/title.scss";
+@import "elements/button.scss";
+
+// Sections
+@import "sections/header.scss";
+@import "sections/sidebar.scss";
+@import "sections/menu.scss";
+@import "sections/hero.scss";
+@import "sections/features.scss";
+@import "sections/our.scss";
+@import "sections/news.scss";
+@import "sections/benefits.scss";
+@import "sections/jobs.scss";
+@import "sections/report.scss";
+@import "sections/experience.scss";
+@import "sections/contact.scss";
+@import "sections/footer.scss";
+@import "sections/worker.scss";

@@ -1,0 +1,228 @@
+.report {
+  margin-bottom: 180px;
+
+  @include lg-down {
+    margin-bottom: 200px;
+  }
+
+  @include md-down {
+    margin-bottom: 140px;
+  }
+  
+  &__inner {
+    display: grid;
+    grid-template-columns: 520px 370px;
+    column-gap: 130px;
+
+    @include lg-down {
+      grid-template-columns: 480px 370px;
+      column-gap: 0;
+    }
+
+    @include md-down {
+      grid-template-columns: 320px 340px;
+      column-gap: 40px;
+    }
+
+    @include sm-down {
+      grid-template-columns: 1fr;
+      grid-template-rows: 2;
+      text-align: center;
+      row-gap: 85px;
+    }
+  }
+
+  &__main-wrapper {
+    width: 410px;
+    position: relative;
+
+    @include lg-down {
+      width: 370px;
+    }
+
+    @include md-down {
+      width: 280px;
+    }
+  }
+
+  &__image {
+    margin-left: 110px;
+
+    @include lg-down {
+      margin-left: 0;
+    }
+
+    @include md-down {
+      min-width: 180px;
+      min-height: 430px;
+    }
+
+    @include sm-down {
+      margin: 0 auto;
+      order: 2;
+    }
+
+    &-shape1,&-shape2,&-shape3,&-logo {
+      position: absolute;
+    }
+
+    &-shape1 {
+      width: 200px;
+      height: 420px;
+      background-color: $color-quaternary;
+      border-radius: 8px;
+      border-top-left-radius: 100px;
+
+      z-index: -3;
+      top: -60px;
+      left: -60px;
+
+      @include lg-down {
+        width: 180px;
+        height: 380px;
+
+        top: -55px;
+        left: -50px;
+      }
+
+      @include md-down {
+        width: 140px;
+        height: 290px;
+
+        top: -45px;
+        left: -40px;
+      }
+    }
+
+    &-shape2 {
+      width: 250px;
+      height: 690px;
+      background-color: $color-secondary;
+      border-radius: 8px;
+      border-bottom-right-radius: 100px;
+
+      z-index: -2;
+      top: -30px;
+      left: 30px;
+
+      @include lg-down {
+        width: 225px;
+        height: 625px;
+
+        top: -25px;
+        left: 30px;
+      }
+
+      @include md-down {
+        width: 170px;
+        height: 470px;
+        
+        top: -20px;
+        left: 20px;
+      }
+    }
+
+    &-shape3 {
+      width: 135px;
+      height: 370px;
+      background-color: $color-primary;
+      border-radius: 8px;
+      border-top-right-radius: 100px;
+
+      z-index: -1;
+      bottom: -25px;
+      left: -30px;
+
+      @include lg-down {
+        width: 120px;
+        height: 335px;
+
+        bottom: -20px;
+        left: -25px;
+        border-top-right-radius: 120px;
+      }
+
+      @include md-down {
+        width: 90px;
+        height: 250px;
+        
+        bottom: -10px;
+        left: -20px;
+      }
+    }
+
+    &-main {
+      top: 0px;
+      right: 0px;
+      
+      border-radius: 10px;
+
+      @include lg-down {
+        width: 370px;
+
+        top: 20px;
+        left: -100px;
+        border-radius: 8px;
+      }
+
+      @include md-down {
+        width: 280px;
+        
+        top: -20px;
+        left: -100px;
+      }
+
+      @include sm-down {
+        top: 85px;
+        left: 53px;
+      }
+    }
+
+    &-logo {
+      z-index: 5;
+      right: 30px;
+      top: 30px;
+
+      @include lg-down {
+        width: 125px;
+
+        top: 25px;
+        right: 25px;
+      }
+
+      @include md-down {
+        width: 95px;
+
+        top: 20px;
+        right: 20px;
+      }
+    }
+  }
+
+  &__content {
+    padding-top: 120px;
+
+    @include lg-down {
+      padding-top: 110px;
+    }
+
+    @include md-down {
+      padding-top: 65px;
+    }
+
+    @include sm-down {
+      max-width: 100%;
+      margin-bottom: 45px;
+      order: 1;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    color: $color-tertiary;
+  }
+}

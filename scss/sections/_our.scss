@@ -1,0 +1,122 @@
+.our {
+  background: linear-gradient(to right, $color-primary 50%, #F6F7F9 50%);
+  margin-bottom: 180px;
+
+  @include lg-down {
+    margin-bottom: 150px;
+  }
+
+  @include md-down {
+    background: linear-gradient(to bottom, $color-primary 50%, #F6F7F9 50%);
+    margin-bottom: 120px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    @include lg-down {
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
+
+    @include md-down {
+      grid-template-columns: 1fr;
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+  }
+
+  &__solutions {
+    padding-right: 165px;
+    color: #fff;
+
+    @include lg-down {
+      padding-right: 80px;
+    }
+
+    @include md-down {
+      padding-right: 0;
+      padding-bottom: 70px;
+    }
+  }
+
+  &__products {
+    padding-left: 125px;
+    padding-right: 45px;
+
+    @include lg-down {
+      padding-left: 95px;
+    }
+
+    @include md-down {
+      padding-left: 0;
+      padding-top: 70px;
+    }
+
+    @include sm-down {
+      padding-right: 0;    
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__marks {
+    padding: 0;
+    margin-bottom: 45px;
+    list-style-type: none;
+  }
+
+  &__marks-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+
+    counter-increment: item;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: counter(item);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 15px;
+
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: $color-secondary;
+
+      color: $color-primary;
+      font-weight: 800;
+
+      @include md-down {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  &__marks-text {
+    font-weight: 700;
+
+    @include md-down {
+      font-size: $font-size-xs;
+    }
+  }
+}

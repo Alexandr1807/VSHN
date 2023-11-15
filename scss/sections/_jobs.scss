@@ -1,0 +1,51 @@
+.jobs {
+  background-color: $color-primary;
+  background-image: url("../images/jobs/illustration.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  position: relative;
+  text-align: center;
+  overflow-x: hidden;
+  margin-bottom: 240px;
+
+  @include lg-down {
+    background-size: 131% 100%;
+    margin-bottom: 200px;
+  }
+
+  @include md-down {
+    background-size: 162% 100%;
+    margin-bottom: 165px;
+  }
+
+  @include sm-down {
+    background-size: 165% 100%;
+    margin-bottom: 55px;
+  }
+
+  &__inner {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    overflow-x: hidden;
+
+    @include lg-down {
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
+
+    @include md-down {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    color: #fff;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    color: #B9BFC6;
+  }
+}

@@ -1,0 +1,373 @@
+.benefits {
+  margin-bottom: 340px;
+
+  @include lg-down {
+    margin-bottom: 270px;
+  }
+
+  @include md-down {
+    margin-bottom: 185px;
+  }
+
+  @include sm-down {
+    margin-bottom: 232px;     
+  }
+
+  &__wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: 520px 1fr;
+    column-gap: 95px;
+
+    @include lg-down {
+      grid-template-columns: 450px 1fr;
+      column-gap: 25px;
+    }
+
+    @include md-down {
+      grid-template-columns: 280px 1fr;
+      column-gap: 0;
+    }
+
+    @include sm-down {
+      display: block;
+      text-align: center;  
+    }
+  }
+
+  &__content {
+    padding-top: 185px;
+
+    @include lg-down {
+      padding-top: 170px;
+    }
+
+    @include md-down {
+      padding-top: 85px;
+    }
+
+    @include sm-down {
+      padding-top: 0;
+      margin-bottom: 55px;  
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    color: $color-tertiary;
+  }
+
+  &__blocks {
+    max-height: 510px;
+    max-width: 600px;
+    transform: rotate(-90deg);
+    left: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+
+    @include lg-down {
+      max-height: 370px;
+      padding-top: 45px;
+    }
+
+    @include md-down {
+      padding-top: 55px;
+    }
+
+    @include sm-down {
+      padding-top: 0;   
+    }
+  }
+
+  &__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+
+  padding-right: 180px;
+
+  width: 450px;
+  height: 70px;
+
+  border-radius: 4px;
+  color: #fff;
+
+  transform: translateX(15px);
+
+  @include lg-down {
+    width: 320px;
+    height: 50px;
+    margin-bottom: 14px;
+    padding-right: 130px;
+    
+    transform: translateX(-50px);
+
+    font-size: $font-size-xxs;
+  }
+
+  @include md-down {
+    width: 295px;
+    height: 45px;
+    padding-right: 110px;
+
+    transform: translateX(-5px);
+  }
+
+  &_rancher {
+    background-color: #0088CC;
+    border-top-right-radius: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      background: $color-primary;
+      opacity: 0.1;
+      z-index: 1;
+      border-bottom-right-radius: 20px;
+
+      @include lg-down {
+        width: 50px;
+        height: 50px;
+      }
+
+      @include md-down {
+        width: 45px;
+        height: 45px;
+
+        border-bottom-right-radius: 15px;
+      }
+    }
+    @include lg-down {
+      border-top-right-radius: 20px;
+    }
+  }
+
+  &_kubernates {
+    background-color: #0054FF;
+    transform: translateX(85px);
+    border-bottom-right-radius: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      background: $color-primary;
+      opacity: 0.1;
+      z-index: 1;
+      border-top-right-radius: 20px;
+
+      @include lg-down {
+        width: 50px;
+        height: 50px;
+      }
+
+      @include md-down {
+        width: 45px;
+        height: 45px;
+
+        border-top-right-radius: 15px;
+      }
+    }
+
+    @include lg-down {
+      transform: none;
+      border-bottom-right-radius: 20px;
+    }
+
+    @include md-down {
+      transform: translateX(40px);
+    }
+  }
+
+  &_ansible {
+    background-color: $color-primary;
+    border-bottom-right-radius: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      background: #FFFFFF;
+      opacity: 0.1;
+      z-index: 1;
+      border-top-right-radius: 20px;
+
+      @include lg-down {
+        width: 50px;
+        height: 50px;
+      }
+
+      @include md-down {
+        width: 45px;
+        height: 45px;
+
+        border-top-right-radius: 15px;
+      }
+    }
+    @include lg-down {
+      border-bottom-right-radius: 20px;
+    }
+  }
+
+  &_openshift {
+    background-color: #DF2030;
+    transform: translateX(-55px);
+    border-top-right-radius: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      background: $color-primary;
+      opacity: 0.1;
+      z-index: 1;
+      border-bottom-right-radius: 20px;
+
+      @include lg-down {
+        width: 50px;
+        height: 50px;
+      }
+
+      @include md-down {
+        width: 45px;
+        height: 45px;
+
+        border-bottom-right-radius: 15px;
+      }
+    }
+
+    @include lg-down {
+      transform: translateX(-100px);
+      border-top-right-radius: 20px;
+    }
+
+    @include md-down {
+      transform: translateX(-50px);
+    }
+  }
+
+  &_docker {
+    background-color: $color-quaternary;
+    border-top-right-radius: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      background: $color-primary;
+      opacity: 0.1;
+      z-index: 1;
+      border-bottom-right-radius: 20px;
+
+      @include lg-down {
+        width: 50px;
+        height: 50px;
+      }
+
+      @include md-down {
+        width: 45px;
+        height: 45px;
+
+        border-bottom-right-radius: 15px;
+      }
+    }
+
+    @include lg-down {
+      border-top-right-radius: 20px;
+    }
+  }
+
+  &_puppet {
+    background-color: $color-secondary;
+    transform: translateX(85px);
+    color: $color-primary;
+    border-bottom-right-radius: 30px;
+    margin-bottom: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      background: #FFFFFF;
+      opacity: 0.25;
+      z-index: 1;
+      border-top-right-radius: 20px;
+
+      @include lg-down {
+        width: 50px;
+        height: 50px;
+      }
+
+      @include md-down {
+        width: 45px;
+        height: 45px;
+
+        border-top-right-radius: 15px;
+      }
+    }
+
+    @include lg-down {
+      transform: none;
+      border-bottom-right-radius: 20px;
+    }
+
+    @include md-down {
+      transform: translateX(40px);
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+&__item-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+
+  transform: rotate(90deg);
+
+  @include lg-down {
+    width: 50px;
+    height: 50px;
+  } 
+
+  img {
+    @include lg-down {
+      width: 30px;
+      height: 30px;
+    } 
+  }
+}
+
+&__shape {
+  position: absolute;
+  top: -40px;
+  right: -70px;
+  z-index: -1;
+
+  @include lg-down {
+    width: 580px;
+    height: 504px;
+    top: 50px;
+    right: -85px;
+  }
+}
+}

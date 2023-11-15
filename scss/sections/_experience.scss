@@ -1,0 +1,217 @@
+.experience {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: $color-primary;
+  text-align: center;
+  background-image: url("../images/experience/background.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+
+  @include lg-down {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    background-size: 150% 100%;
+  }
+
+  @include md-down {
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    background-size: 220% 100%;
+  }
+
+  @include sm-down {
+    background-size: 250% 100%;
+  }
+
+  &__title {
+    margin: 0 auto;
+    max-width: 850px;
+    color: #fff;
+    margin-bottom: 60px;
+
+    @include lg-down {
+      max-width: 610px;
+      margin-bottom: 45px;
+    }
+
+    @include md-down {
+      max-width: 580px;
+      margin-bottom: 30px;
+    }
+  }
+  
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+
+    @include md-down {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 170px);
+      row-gap: 20px;
+    }
+
+    @include sm-down {
+      grid-template-rows: repeat(3, 345px);
+    }
+  }
+
+  &__item {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    background-color: #040816;
+    border-radius: 8px;
+    position: relative;
+
+    transition: filter $transition-base ease-in-out;
+
+    @include lg-down {
+      padding-bottom: 30px;
+    }
+
+    &:hover {
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+      .experience__item-footer {
+        color: $color-quaternary;
+      }
+
+      .experience__item-hover {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    @include md-down {
+      text-align: left;
+      padding-right: 60px;
+      
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      grid-column-gap: 30px;
+    }
+
+    @include sm-down {
+      display: block;
+      text-align: center;
+      padding-right: 30px;
+    }
+  }
+
+  &__item-hover {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+
+    transition: opacity $transition-base, visibility $transition-base ease-in-out;
+
+    @include lg-down {
+      width: 240px;
+      top: 20px;
+      left: 25px;
+    }
+
+    @include md-down {
+      width: 180px;
+      top: 15px;
+      left: 5px;
+    }
+
+    @include sm-down {
+      width: 255px;
+      left: 60px;
+      top: 10px;
+    }
+  }
+
+  &__item-image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    @include lg-down {
+      width: 130px;
+    }
+
+    @include md-down {
+      width: 105px;
+      margin-bottom: 35px;
+
+      grid-row-start: 1;
+      grid-row-end: 4;
+    }
+
+    @include sm-down {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 15px;
+    color: #fff;
+
+    @include md-down {
+      padding-top: 30px;    
+    }
+  }
+
+  &__item-text {
+    margin-bottom: 60px;
+
+    font-size: $font-size-xs;
+    line-height: $line-height-xs;
+    color: #B9BFC6;
+  }
+
+  &__item-footer {
+    width: 100%;
+    padding-top: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+
+    text-transform: uppercase;
+    font-size: $font-size-xxs;
+    color: #fff;
+
+    transition: color $transition-base linear;
+
+    &::before {
+      content: "";
+      width: 350px;
+      height: 2px;
+      position: absolute;
+      top: 0;
+      left: 30px;
+      background-color: rgba(255, 255, 255, 0.05);
+
+      @include lg-down {
+        width: 230px;
+      }
+
+      @include md-down {
+        display: none;
+      }
+
+      @include sm-down {
+        display: block;
+        width: 330px;
+      }
+    }
+
+    @include md-down {
+      width: auto;
+      left: 190px;
+    }
+
+    @include sm-down {
+      width: 100%;
+      left: 0;
+    }
+  }
+}

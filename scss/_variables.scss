@@ -1,0 +1,38 @@
+// Colors
+$color-primary: #000D1A;
+$color-secondary: #FFBF00;
+$color-tertiary: #818898;
+$color-quaternary: #4CC3FF;
+
+// Fonts
+$font-family-primary: 'Montserrat', sans-serif;
+
+$font-size-base: 20px;
+$line-height-base: 1.4;
+
+$font-size-sm: 18px;
+$line-height-sm: 1.6;
+
+$font-size-xs: 16px;
+$line-height-xs: 1.4;
+
+$font-size-xxs: 14px;
+$line-height-xxs: 1.4;
+
+$font-size-xxxs: 12px;
+$line-height-xxxs: 1.3;
+
+// Container
+$container-width-lg: 1290px;
+$container-width-md: 930px;
+$container-width-sm: 700px;
+
+// Breakpoints
+// We minus 0.02px from our breakpoints because these breakpoints are for mobile-first but we use desktop-first approach
+$breakpoint-lg-down: 1330px - 0.02px;
+$breakpoint-md-down: 1024px - 0.02px;
+$breakpoint-sm-down: 768px - 0.02px;
+$breakpoint-xs-down: 414px - 0.02px;
+
+// Transitions 
+$transition-base: 0.2s;

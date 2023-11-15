@@ -1,0 +1,129 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include md-down {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  
+  &__logo {
+    margin-bottom: 45px;
+    display: block;
+
+    @include md-down {
+      width: 100px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 550px 1fr;
+    margin-bottom: 45px;
+
+    @include lg-down {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 50px;
+      margin-bottom: 40px;
+    }
+
+    @include md-down {
+      grid-template-columns: 1fr;
+      grid-template-rows: 100px 30px;
+      row-gap: 40px;
+      margin-bottom: 30px;
+    }
+
+    @include sm-down {
+      row-gap: 145px;
+    }
+  }
+
+  &__socials {
+    max-width: 320px;
+
+    @include md-down {
+      order: 2;
+    }
+  }
+
+  &__socials-icon {
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__social-img {
+    width: 30px;
+  }
+
+  &__nav {
+    max-width: 730px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 120px;
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 130px;
+    row-gap: 15px;
+    list-style: none;
+
+    @include lg-down {
+      max-width: 525px;
+      grid-template-columns: 1fr 120px 1fr;
+    }
+
+    @include md-down {
+      max-width: 660px;
+      column-gap: 100px;
+      grid-template-columns: 1fr 1fr 1fr 120px;
+      grid-template-rows: repeat(3, 1fr);
+
+      order: 1;
+    }
+
+    @include sm-down {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 15px;
+    }
+  }
+
+  &__nav-link {
+    font-weight: bold;
+    font-size: $font-size-xs;
+    line-height: $line-height-xs;
+
+    transition: color $transition-base;
+
+    &:hover {
+      color: $color-quaternary
+    }
+  }
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: 550px 1fr;
+
+    font-size: $font-size-xs;
+    color: #B9BFC6;
+
+    @include lg-down {
+      grid-template-columns: 405px 1fr;
+    } 
+
+    @include md-down {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      row-gap: 10px;
+    }
+
+    @include sm-down {
+      grid-template-rows: 25px 45px;
+    }
+  }
+
+  &__color {
+    color: $color-primary;
+  }
+}

@@ -1,0 +1,43 @@
+.contact {
+  background-color: #F6F7F9;
+  background-image: url("../images/contact/background.png");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  text-align: center;
+
+  @include lg-down {
+    background-size: 150% 100%;
+  }
+
+  @include md-down {
+    background-size: 195% 100%;
+  }
+
+  @include sm-down {
+    background-size: 200% 100%;
+  }
+
+  &__inner {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    @include lg-down {
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
+
+    @include md-down {
+      padding-top: 70px;
+      padding-bottom: 70px;   
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+}
